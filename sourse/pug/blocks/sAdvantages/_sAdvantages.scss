@@ -1,0 +1,91 @@
+// start .sAdvantages
+.sAdvantages {
+	// --sPT: #{rem()};
+	--sPB: #{rem(139)};
+	--sTPB: #{rem(20)};
+	@include media-breakpoint-down(md) {
+		--sPB: #{rem(70)};
+	}
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title{
+		h2 {
+			font-family: Plantin;
+			font-size: 50px;
+			line-height: 101.939%;
+			letter-spacing: -1.5px;
+		}
+	}
+	&__container {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		height: 100%;
+		&--list {
+			padding-top: 36px;
+			img {
+				@include media-breakpoint-down(lg) {
+					height: 250px;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+	p {
+		flex-grow: 1;
+	}
+	&__btn {
+		margin-bottom: 50px;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 24px;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		width: 100%;
+		flex-grow: 1;
+		list-style-type: none;
+		color:#151411;
+		font-size: rem(35);
+		font-weight: 500;
+		@include media-breakpoint-down(lg) {
+			font-size:rem(24);
+		}
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+		}
+	}
+	&__item {
+		@include media-breakpoint-down(sm) {
+			text-align: center;
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		&:not(:last-child) {
+			margin-right: 10px;
+			@include media-breakpoint-up(xxl) {
+				margin-right: 20px;
+			}
+		}
+		span {
+			display: block;
+			color: #AFADB5;
+			font-size: 15px;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAdvantages

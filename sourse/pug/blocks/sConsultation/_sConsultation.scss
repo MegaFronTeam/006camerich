@@ -1,0 +1,140 @@
+// start .sConsultation
+.sConsultation {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	--sTPB: #{rem(30)};
+	
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title{
+		@include media-breakpoint-up(lg) {
+			padding-top: 80px;
+		}
+		h2 {
+			font-size:rem(30);
+			line-height: 120%;
+			@include media-breakpoint-up(lg) {
+				font-size:rem(50);
+			}
+		}
+	}
+	p {
+		max-width: 470px;
+		margin-bottom: 24px;
+		color: $gray-600;
+		font-family: $accent-font;
+		line-height: 175%;
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 58px;
+		}
+	}
+	&__call-btn {
+		display: block;
+		position: relative;
+		padding-left: 80px;
+		font-family: $accent-font;
+		font-size:rem(18);
+		font-weight: 600;
+		line-height: 1.4;
+		letter-spacing: 0.24px;
+		color: $black;
+		&:hover {
+			color: $primary;
+		}
+		@include media-breakpoint-up(md) {
+			font-size:rem(24);
+		}
+		@include media-breakpoint-up(sm) {
+			padding-left: 108px;
+		}
+		span {
+			display: block;
+			margin-bottom: 36px;
+			color: $gray-600;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1;
+			letter-spacing: 0.22px;
+			@include media-breakpoint-up(sm) {
+				margin-bottom: 56px;
+				font-size: rem(22);
+			}
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 70px;
+			}
+		}
+		&::before {
+			position: absolute;
+			display: block;
+			content: '';
+			left: 0;
+			top: 50%;
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			background-color: #F4F0EC;
+			background-image: url('../img/call.svg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			transform: translateY(-50%);
+			@include media-breakpoint-up(sm) {
+				width: 93px;
+				height: 93px;
+			}
+		}
+	}
+	.main-btn {
+		display: inline-block;
+		margin-bottom: 32px;
+		
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 0;
+		}
+	}
+	.main-btn:before {
+    left: 0;
+    top: -13px;
+		height: 123%;
+		width: 100%;
+	}
+	.main-btn:after {
+		left: 10px;
+		top: 0;
+		height: 123%;
+		width: 100%;
+	}
+	&__img-wrap {
+		border-radius: 0 36px 0 36px ;
+		background: #C4C4C4;
+		overflow: hidden;
+		height: 300px;
+		@include media-breakpoint-up(sm) {
+			height: 100%;
+		}
+		@include media-breakpoint-up(lg) {
+			border-radius: 0 326px 0 123px ;
+			height: auto;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__col{
+		
+	}
+	&__item{
+		
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sConsultation

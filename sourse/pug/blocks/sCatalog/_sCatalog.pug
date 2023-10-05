@@ -1,0 +1,75 @@
+mixin product-item(img, category, title ,price)
+	+b.ARTICLE.product-item
+		+e.img-wrap(href="#")
+			+img(`img/prod-${img}.jpg`)
+		+e.category!= category
+		+e.caption
+			+e.title!= title
+			+e.price #[span от] #{price}
+	// /.product-item
+
+mixin sCatalog(data)
+	// start sCatalog
+	+b.sCatalog.section&attributes(attributes)
+		.container
+			.row
+				+e.text-col.col-lg-4
+					+b.section-title
+						+e.subtitle INTERIOR DESIGN
+						h2 Camerich
+					p Camerich – восходящая звезда мирового мебельного дизайна. Стилистика бренда – современная классика с американским акцентом
+					+e.btn(href="#") #[span смотреть] все
+				.col-lg-8
+					.product-slider.swiper
+						.swiper-wrapper
+							.swiper-slide
+								+product-item(`1`,`Диваны / Camerich`,`CLOUDS`,`₽ 549 897`)
+							.swiper-slide
+								+product-item(`2`,`Диваны / Camerich`,`EASYTIME`,`₽ 280 693`)
+							.swiper-slide
+								+product-item(`3`,`Диваны / Camerich`,`LOLA`,`₽ 396 377`)
+							.swiper-slide
+								+product-item(`1`,`Диваны / Camerich`,`CLOUDS`,`₽ 549 897`)
+							.swiper-slide
+								+product-item(`2`,`Диваны / Camerich`,`EASYTIME`,`₽ 280 693`)
+							.swiper-slide
+								+product-item(`3`,`Диваны / Camerich`,`LOLA`,`₽ 396 377`)
+						.swiper-conrols
+							.swiper-scrollbar
+							.swiper-buttons.d-none.d-lg-flex
+								.swiper-button-prev
+								.swiper-button-next
+
+mixin sCatalog2(data)
+	// start sCatalog
+	+b.sCatalog.section&attributes(attributes)
+		.container
+			.row
+				+e.text-col.col-lg-4
+					+b.section-title
+						+e.subtitle INTERIOR DESIGN
+						h2 Camerich
+					p Продукция бренда Camerich рассчитана на мирового покупателя – вне зависимости от того, покупаете вы дом в Сиднее, квартиру в Москве или пентхаус в Лондоне – мебель Camerich подойдет именно вам!
+					+e.btn(href="#") #[span смотреть] все
+				.col-lg-8
+					.product-slider.swiper
+						.swiper-wrapper
+							.swiper-slide
+								+product-item(`4`,`Стулья / Camerich`,`MING`,`₽ 55 168`)
+							.swiper-slide
+								+product-item(`5`,`Стулья / Camerich`,`SOHO`,`₽ 85 179`)
+							.swiper-slide
+								+product-item(`6`,`Стулья / Camerich`,`LEAF`,`₽ 65 171`)
+							.swiper-slide
+								+product-item(`4`,`Стулья / Camerich`,`MING`,`₽ 55 168`)
+							.swiper-slide
+								+product-item(`5`,`Стулья / Camerich`,`SOHO`,`₽ 85 179`)
+							.swiper-slide
+								+product-item(`6`,`Стулья / Camerich`,`LEAF`,`₽ 65 171`)
+						.swiper-conrols
+							.swiper-scrollbar
+							.swiper-buttons.d-none.d-lg-flex
+								.swiper-button-prev
+								.swiper-button-next
+
+	// end sCatalog

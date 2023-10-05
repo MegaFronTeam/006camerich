@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Главная</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/custom-bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<!-- start headerBlock-->
+				<div class="headerBlock section" id="headerBlock">
+					<div class="container">
+						<div class="headerBlock__row">
+							<div class="headerBlock__container">
+								<h1 class="visually-hidden">B V S INTERIORS</h1>
+								<div class="section-title">
+									<h2>Дизайн от&nbsp;людей и&nbsp;для людей</h2>
+									<div class="section-title__subtitle">INTERIOR DESIGN
+									</div>
+								</div>
+								<a class="headerBlock__btn main-btn" href="#">Показать все
+								</a>
+								<button class="headerBlock__down-btn btn d-none d-md-block"><img src="img/arrow-down.png" alt="" loading="lazy"/>
+								</button>
+							</div>
+							<div class="headerBlock__img-wrap"><img src="img/header-bg.jpg" alt="" loading="lazy"/>
+							</div>
+							<div class="headerBlock__subscription">Будь в курсе наших новостей <a href="#">@bvs-Interiors.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock-->
+				<!-- start sCatalog-->
+				<div class="sCatalog section">
+					<div class="container">
+						<div class="row">
+							<div class="sCatalog__text-col col-lg-4">
+								<div class="section-title">
+									<div class="section-title__subtitle">INTERIOR DESIGN
+									</div>
+									<h2>Camerich</h2>
+								</div>
+								<p>Camerich – восходящая звезда мирового мебельного дизайна. Стилистика бренда – современная классика с американским акцентом</p>
+								<a class="sCatalog__btn" href="#"><span>смотреть</span> все
+								</a>
+							</div>
+							<div class="col-lg-8">
+								<div class="product-slider swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-1.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Диваны / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">CLOUDS
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 549 897
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-2.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Диваны / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">EASYTIME
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 280 693
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-3.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Диваны / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">LOLA
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 396 377
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-1.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Диваны / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">CLOUDS
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 549 897
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-2.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Диваны / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">EASYTIME
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 280 693
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-3.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Диваны / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">LOLA
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 396 377
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+									</div>
+									<div class="swiper-conrols">
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-buttons d-none d-lg-flex">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- start sConsultation-->
+				<section class="sConsultation section" id="sConsultation">
+					<div class="container">
+						<div class="sConsultation__row row">
+							<div class="col-sm-8 col-lg-6">
+								<div class="section-title">
+									<h2>Заботимся о каждом аспекте вашей жизни.</h2>
+								</div>
+								<p>Миссия Camerich — не просто слова: индивидуальные решения, которые предлагает компания для удовлетворения любых потребностей клиентов обеспечивают действительно индивидуальный и уникальный подход к производству мебели.</p>
+								<a class="sConsultation__call-btn" href="tel:+79670056677">+79670056677 <span>Позвоните нам</span>
+								</a>
+								<a class="sConsultation__btn main-btn" data-fancybox="data-fancybox" data-type="ajax" href="modal/call.html">Получить консультацию
+								</a>
+							</div>
+							<div class="col-sm-4 col-lg-6">
+								<div class="sConsultation__img-wrap"><img src="img/call-us.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sConsultation-->
+				<!-- start sAbout-->
+				<section class="sAbout section" id="sAbout">
+					<div class="container">
+						<div class="sAbout__row row">
+							<div class="col-sm-6 col-lg-4">
+								<div class="sAbout__item sAbout__item--bottom">
+									<div class="section-title">
+										<div class="section-title__subtitle">INTERIOR DESIGN
+										</div>
+										<h2>Мы предлагаем мебель, всерьез и надолго.</h2>
+									</div>
+									<div class="sAbout__img-wrap"><img src="img/about-1.jpg" alt="" loading="lazy"/>
+									</div>
+								</div>
+							</div>
+							<div class="d-none d-lg-block col-lg-4">
+								<div class="sAbout__item">
+									<div class="sAbout__img-wrap sAbout__img-wrap--xl"><img src="img/about-2.jpg" alt="" loading="lazy"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<div class="sAbout__item">
+									<div class="sAbout__img-wrap sAbout__img-wrap--border d-none d-sm-block"><img src="img/about-3.jpg" alt="" loading="lazy"/>
+									</div>
+									<p>Мебельщики Camerich — мастера своего дела — умело комбинируют в работе многолетний опыт, страсть к любимому делу и современные технологии.</p>
+									<a class="sAbout__btn main-btn" href="#">Показать все
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sAbout-->
+				<!-- start sCatalog-->
+				<div class="sCatalog section">
+					<div class="container">
+						<div class="row">
+							<div class="sCatalog__text-col col-lg-4">
+								<div class="section-title">
+									<div class="section-title__subtitle">INTERIOR DESIGN
+									</div>
+									<h2>Camerich</h2>
+								</div>
+								<p>Продукция бренда Camerich рассчитана на мирового покупателя – вне зависимости от того, покупаете вы дом в Сиднее, квартиру в Москве или пентхаус в Лондоне – мебель Camerich подойдет именно вам!</p>
+								<a class="sCatalog__btn" href="#"><span>смотреть</span> все
+								</a>
+							</div>
+							<div class="col-lg-8">
+								<div class="product-slider swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-4.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Стулья / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">MING
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 55 168
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-5.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Стулья / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">SOHO
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 85 179
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-6.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Стулья / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">LEAF
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 65 171
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-4.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Стулья / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">MING
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 55 168
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-5.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Стулья / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">SOHO
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 85 179
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+										<div class="swiper-slide">
+											<article class="product-item">
+												<a class="product-item__img-wrap" href="#"><img src="img/prod-6.jpg" alt="" loading="lazy"/>
+												</a>
+												<div class="product-item__category">Стулья / Camerich
+												</div>
+												<div class="product-item__caption">
+													<div class="product-item__title">LEAF
+													</div>
+													<div class="product-item__price"><span>от</span> ₽ 65 171
+													</div>
+												</div>
+											</article>
+											<!-- /.product-item-->
+										</div>
+									</div>
+									<div class="swiper-conrols">
+										<div class="swiper-scrollbar"></div>
+										<div class="swiper-buttons d-none d-lg-flex">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end sCatalog-->
+				<!-- start sAdvantages-->
+				<section class="sAdvantages section" id="sAdvantages">
+					<div class="container">
+						<div class="sAdvantages__row row">
+							<div class="col-lg-6">
+								<div class="sAdvantages__container">
+									<div class="section-title">
+										<div class="section-title__subtitle">INTERIOR DESIGN
+										</div>
+										<h2>Дизайн от&nbsp;людей и&nbsp;для людей</h2>
+									</div>
+									<p>Как элитный мебельный бренд с международным видением, CAMERICH стремится создать «современный образ жизни» премиум-класса.</p>
+									<a class="sAdvantages__btn main-btn" href="#">Показать все
+									</a><img src="img/advantages-1.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sAdvantages__container sAdvantages__container--list">
+									<ul class="sAdvantages__list">
+										<li class="sAdvantages__item">25+ <span>Многолетний опыт</span>
+										</li>
+										<li class="sAdvantages__item">983 <span>Счастливых клиентов</span>
+										</li>
+										<li class="sAdvantages__item">150+ <span>Реализованных проэктов</span>
+										</li>
+									</ul><img src="img/advantages-2.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sAdvantages-->
+				<!-- start sProjects-->
+				<section class="sProjects section" id="sProjects">
+					<div class="sProjects__container container">
+						<div class="sProjects__slogan">Design by the People and for the <span>People.</span>
+						</div>
+						<h2 class="sProjects__title">Проекты
+						</h2>
+						<div class="sProjects__slider-container">
+							<div class="sProjects__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="sProjects__slide-content"><img src="img/project-1.jpg" alt="" loading="lazy"/>
+											<h3>Вилла в Висконсине</h3>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sProjects__slide-content"><img src="img/project-1.jpg" alt="" loading="lazy"/>
+											<h3>Вилла в Висконсине</h3>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sProjects__slide-content"><img src="img/project-1.jpg" alt="" loading="lazy"/>
+											<h3>Вилла в Висконсине</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</section>
+				<!-- end sProjects-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

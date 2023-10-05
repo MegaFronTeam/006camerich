@@ -1,0 +1,134 @@
+// start .headerBlock
+.headerBlock {
+	--sPT: #{rem(106)};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()}; 
+	// min-height: 100vh;
+	// min-height: calc(var(--vh, 1vh) * 100);
+	@include media-breakpoint-down(md) {
+		--sTPB: #{rem(100)}; 
+	}
+	&__row {
+		position: relative;
+	}
+	&__container {
+		position: relative;
+		padding-top: 40px;
+		margin-bottom: 20px;
+		left: 0;
+		height: 500px;
+		@include media-breakpoint-up(md) {
+			left: 17%;
+			padding-top: 120px;
+			margin-bottom: 0;
+			height: 700px;
+		}
+	}
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: var(--bs-gutter-x);
+	}
+	&__subscription {
+		font-size: rem(16);
+		line-height: 1;
+		font-weight: 600;
+		a {
+			display: block;
+			@include media-breakpoint-up(md) {
+				display: inline;
+			}
+		}
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			bottom: 73px;
+			left: -5px;
+			transform: rotate(-90deg);
+			transform-origin: 23px bottom;
+			font-size: rem(20);
+		}
+	}
+	.section-title{
+		h2 {
+			max-width: 570px;
+			margin-bottom: 20px;
+			font-size: rem(40);
+			line-height: 1.1;
+			@include media-breakpoint-up(md) {
+				font-size: 70px;
+			}
+		}
+		&__subtitle {
+			color: $primary;
+			font-weight: 500;
+			letter-spacing: 3.5px;
+		}
+	}
+	&__img-wrap {
+		position: absolute;
+		width: 50%;
+		height: 500px;
+		left: 70%;
+		top: 0;
+		z-index: -1;
+		@include media-breakpoint-up(md) {
+			left: calc(50% + 15px);
+			height: 700px;
+		}
+		img {
+			height: 100%;
+		}
+	}
+	&__down-btn {
+		position: absolute;
+		bottom: -10px;
+		left: 66px;
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__slide{
+		height: auto;
+	}
+
+	@include media-breakpoint-up(xl) {}
+
+	@include media-breakpoint-up(lg) {}
+
+	@include media-breakpoint-up(md) {}
+
+	@include media-breakpoint-up(sm) {}
+
+	@include media-breakpoint-up(xs) {}
+
+	//
+	@include media-breakpoint-between(md, xl) {}
+
+
+	//
+	@include media-breakpoint-only(xs) {}
+
+	@include media-breakpoint-only(sm) {}
+
+	@include media-breakpoint-only(md) {}
+
+	@include media-breakpoint-only(lg) {}
+
+	@include media-breakpoint-only(xl) {}
+
+	//
+	@include media-breakpoint-down(xl) {}
+
+	@include media-breakpoint-down(lg) {}
+
+	@include media-breakpoint-down(md) {}
+
+	@include media-breakpoint-down(sm) {}
+
+	@include media-breakpoint-down(xs) {}
+
+}
+
+// end.headerBlock

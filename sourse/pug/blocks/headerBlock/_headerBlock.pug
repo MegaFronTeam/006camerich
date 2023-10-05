@@ -1,0 +1,18 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		.container
+			+e.row
+				+e.container
+					h1.visually-hidden B V S INTERIORS
+					+b.section-title
+						h2 Дизайн от&nbsp;людей и&nbsp;для людей
+						+e.subtitle INTERIOR DESIGN
+					+e.btn.main-btn(href="#") Показать все
+					+e.down-btn.btn.BUTTON.d-none.d-md-block
+						+img('img/arrow-down.png')
+				+e.img-wrap
+					+img('img/header-bg.jpg')
+				+e.subscription Будь в курсе наших новостей #[a(href="#") @bvs-Interiors.ru]
+			
+	// end headerBlock

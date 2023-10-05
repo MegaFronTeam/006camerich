@@ -1,0 +1,39 @@
+@use "sass:math";
+
+.iconC {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.iconC-dzen {
+	$h: 11;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(10 / #{$h} *1em );
+}
+.iconC-fb {
+	$h: 12;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(12 / #{$h} *1em );
+}
+.iconC-instagram {
+	$h: 12;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(12 / #{$h} *1em );
+}
+.iconC-telegram {
+	$h: 12;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(12 / #{$h} *1em );
+}
+.iconC-vk {
+	$h: 12;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(12 / #{$h} *1em );
+}
+.iconC-youtube {
+	$h: 12;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(12 / #{$h} *1em );
+}

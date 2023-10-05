@@ -1,0 +1,15 @@
+mixin sConsultation(data)
+	// start sConsultation
+	+b.SECTION.sConsultation.section#sConsultation&attributes(attributes)
+		.container
+			+e.row.row
+				.col-sm-8.col-lg-6
+					+b.section-title
+						h2 Заботимся о каждом аспекте вашей жизни.
+					p Миссия Camerich — не просто слова: индивидуальные решения, которые предлагает компания для удовлетворения любых потребностей клиентов обеспечивают действительно индивидуальный и уникальный подход к производству мебели.
+					+e.call-btn(href="tel:+79670056677") +79670056677 #[span Позвоните нам]
+					+e.btn.main-btn(data-fancybox data-type="ajax" href="modal/call.html") Получить консультацию
+				.col-sm-4.col-lg-6
+					+e.img-wrap
+						+img('img/call-us.jpg')
+	// end sConsultation

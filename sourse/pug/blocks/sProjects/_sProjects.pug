@@ -1,0 +1,24 @@
+mixin sProjects(data)
+	// start sProjects
+	+b.SECTION.sProjects.section#sProjects&attributes(attributes)
+		+e.container.container
+			+e.slogan Design by the People and for the #[span People.]
+			+e.title.H2 Проекты
+			+e.slider-container
+				+e.slider.swiper
+					.swiper-wrapper
+						.swiper-slide
+							+e.slide-content
+								+img('img/project-1.jpg')
+								h3 Вилла в Висконсине
+						.swiper-slide
+							+e.slide-content
+								+img('img/project-1.jpg')
+								h3 Вилла в Висконсине
+						.swiper-slide
+							+e.slide-content
+								+img('img/project-1.jpg')
+								h3 Вилла в Висконсине
+				.swiper-button-prev
+				.swiper-button-next
+	// end sProjects

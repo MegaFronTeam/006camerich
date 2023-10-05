@@ -1,0 +1,22 @@
+mixin sAdvantages(data)
+	// start sAdvantages
+	+b.SECTION.sAdvantages.section#sAdvantages&attributes(attributes)
+		.container
+			+e.row.row
+				.col-lg-6
+					+e.container
+						+b.section-title
+							+e.subtitle INTERIOR DESIGN
+							h2 Дизайн от&nbsp;людей и&nbsp;для людей
+						p Как элитный мебельный бренд с международным видением, CAMERICH стремится создать «современный образ жизни» премиум-класса.
+						+e.btn.main-btn(href="#") Показать все
+						+img('img/advantages-1.jpg')
+				.col-lg-6
+					+e.container--list
+						+e.list.UL
+							+e.item.LI 25+ #[span Многолетний опыт]
+							+e.item.LI 983 #[span Счастливых клиентов]
+							+e.item.LI 150+ #[span Реализованных проэктов]
+						+img('img/advantages-2.jpg')
+				
+	// end sAdvantages

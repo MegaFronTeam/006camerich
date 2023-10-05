@@ -1,0 +1,26 @@
+mixin footer()
+	+b.FOOTER.footer.section
+		.container
+			+e.top.row
+				.col-md-6.col-lg-8
+					+e.slogan Создайте дом своей мечты вместе с нами.
+					+e.subscribe-block
+						form
+							input(type="email" placeholder="Your Email")
+							button.btn 
+								+img('img/send.png')
+				.col-md-6.col-lg-4
+					+e.contact
+						+e.title Адрес:
+						address
+							+e.address г. Москва,<br> Бережковская набережная, 20с35
+							+e.address г. Санкт-Петербург,<br> Московскийпроспект, 79
+					+e.contact Email us at: #[a(href="mailto:info@bvs-Interiors.ru") info@bvs-Interiors.ru]
+					+e.contact Телефон: #[a(href="tel:+78123200619") +7 812 320 06 19] #[a(href="tel:+79670056677") +7 812 320 06 19]
+			+e.bottom
+				+e.copyright
+					+icon('copyright')
+					| Design by the People and for the People
+				+e.subscribtion
+					p.d-none.d-sm-flex подпишись
+					+soc

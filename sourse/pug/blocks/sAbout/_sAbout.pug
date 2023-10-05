@@ -1,0 +1,24 @@
+mixin sAbout(data)
+	// start sAbout
+	+b.SECTION.sAbout.section#sAbout&attributes(attributes)
+		.container
+			+e.row.row
+				.col-sm-6.col-lg-4
+					+e.item--bottom
+						+b.section-title
+							+e.subtitle INTERIOR DESIGN
+							h2 Мы предлагаем мебель, всерьез и надолго.
+						+e.img-wrap
+							+img('img/about-1.jpg')
+				.d-none.d-lg-block.col-lg-4
+					+e.item
+						+e.img-wrap--xl
+							+img('img/about-2.jpg')
+				.col-sm-6.col-lg-4
+					+e.item
+						+e.img-wrap--border.d-none.d-sm-block
+							+img('img/about-3.jpg')
+						p Мебельщики Camerich — мастера своего дела — умело комбинируют в работе многолетний опыт, страсть к любимому делу и современные технологии.
+						+e.btn.main-btn(href='#') Показать все
+				
+	// end sAbout

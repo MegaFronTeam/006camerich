@@ -1,0 +1,14 @@
+include ../../layout/include.pug
+
++b.modal-win
+	+form-wrap 
+		+e.title Мы заботимся о каждом аспекте вашей жизни
+		.row
+			.col-12.col-md-6
+				+input("Имя",'text')(required)  
+			.col-12.col-md-6
+				+input("Email",'email')(required)
+			.col-12
+				+input('Напиши нам..','textarea')
+			.col-12.text-center
+				+e.BUTTON.btn.btn.main-btn(type="submit") Получить консультацию
