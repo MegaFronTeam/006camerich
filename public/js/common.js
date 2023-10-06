@@ -80,6 +80,8 @@ function eventHandler() {
 		},
 	})
 
+	AOS.init();
+
 	const swiper4 = new Swiper('.sBanners__slider--js', { // если не используешь методы swiper  - можно обращаться без нее к Swiper
 		// slidesPerView: 5,
 		...defaultSl,

@@ -3,6 +3,9 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	@include media-breakpoint-down(md) {
+		--sPT: #{rem(25)};
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);
@@ -14,6 +17,9 @@
 		background-color: $white;
 		// box-shadow: -1000px 0 0 white;
 		z-index: 10;
+		@include media-breakpoint-down(md) {
+			padding-top: 0;
+		}
 		&::before {
 			position: absolute;
 			display: block;
