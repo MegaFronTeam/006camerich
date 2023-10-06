@@ -1,13 +1,11 @@
 {
 	"nav":[
-		{ "name":"Наши работы", "url":"#"},
-		{	"name":"Цены", "url":"#"},
-		{"name":"Калькулятор", "url":"#"},
-		{"name":"Акции", "url":"#"} ,
-		{
-			"name":"Заказать", 
-			"url":"#"
-			}
+		{ "name":"Диваны", "url":"#sofas"},
+		{	"name":"Связаться с нами", "url":"#feedback"},
+		{"name":"Калькулятор", "url":"#about"},
+		{"name":"Стулья", "url":"#chairs"} ,
+		{"name":"Премущества", "url":"#advantages"},
+		{"name":"Наши проекты", "url":"#projects"}
 	],
 	"social":[
 		"instagram","telegram","fb","vk","youtube","dzen"

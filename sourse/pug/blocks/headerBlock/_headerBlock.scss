@@ -6,7 +6,8 @@
 	// min-height: 100vh;
 	// min-height: calc(var(--vh, 1vh) * 100);
 	@include media-breakpoint-down(md) {
-		--sTPB: #{rem(100)}; 
+		--sTPB: #{rem(100)};
+		--sPT: #{rem(20)}; 
 	}
 	&__row {
 		position: relative;
@@ -16,7 +17,7 @@
 		padding-top: 40px;
 		margin-bottom: 20px;
 		left: 0;
-		height: 500px;
+		height: 400px;
 		@include media-breakpoint-up(md) {
 			left: 17%;
 			padding-top: 120px;
@@ -66,7 +67,7 @@
 	&__img-wrap {
 		position: absolute;
 		width: 50%;
-		height: 500px;
+		height: 400px;
 		left: 70%;
 		top: 0;
 		z-index: -1;

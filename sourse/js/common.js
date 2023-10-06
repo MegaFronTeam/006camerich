@@ -55,6 +55,7 @@ function eventHandler() {
 		const productSlider = new Swiper(slider,{
 			slidesPerView: 'auto',
 			spaceBetween: 20,
+			slidesOffsetAfter: 50,
 			breakpoints: {
 				768: {
 					spaceBetween: 40,

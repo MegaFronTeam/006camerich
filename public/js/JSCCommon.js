@@ -85,9 +85,10 @@ class JSCCommon {
 	static mobileMenu() {
 		document.addEventListener('click', (event) => {
 			let container = event.target.closest('.menu-mobile--js'); // (1)
+			let li = event.target.closest('.menu-mobile--js li a')
 			let toggle = event.target.closest('.toggle-menu-mobile--js'); // (1)
 			if (toggle) this.toggleMenu();
-			if (!container && !toggle) this.closeMenu();
+			if (!container && !toggle || li) this.closeMenu();
 		},
 			{ passive: true },
 		);
