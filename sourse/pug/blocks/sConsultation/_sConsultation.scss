@@ -104,6 +104,12 @@
 	.main-btn {
 		display: inline-block;
 		margin-bottom: 32px;
+		&:hover {
+			&::before, &::after {
+				top: -7px;
+				left: 0;
+			}
+		}
 		
 		@include media-breakpoint-up(sm) {
 			margin-bottom: 0;

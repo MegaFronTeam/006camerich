@@ -46,6 +46,12 @@
 		@include media-breakpoint-down(md) {
 			padding: 13px 20px;
 		}
+		&:hover {
+			&::before, &::after {
+				top: -7px;
+				left: 0;
+			}
+		}
 	}
 	.main-btn:before {
     left: 0;

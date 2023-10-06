@@ -567,6 +567,8 @@ iframe {
 		color: $primary;
 		&::before, &::after {
 			border-color: $primary;
+			top:0;
+			left: 8px;
 		}
 	}
 	&::before, &::after {
